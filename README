@@ -1,0 +1,38 @@
+# CSC415 Assignment 1 – RAD Reproduction (SAC + Data Augmentation)
+
+This repository reproduces core results from *Reinforcement Learning with Augmented Data (RAD)* using Soft Actor-Critic (SAC) on the DeepMind Control Suite (Cartpole Swingup, pixel observations). It also includes a simple ablation comparing **random crop augmentation vs no augmentation**.
+
+The main entry point is: Main.py
+
+which launches two training runs:
+
+- `repro_crop` – RAD with random crop augmentation  
+- `ablation_noaug` – SAC with no augmentation  
+
+Results are saved under: \runs
+
+Download All files and place them in one directory.
+
+---
+
+## Requirements
+
+Tested with:
+
+- Python 3.8+
+- MuJoCo
+- dm_control / dmc2gym
+- Gym
+- NumPy
+- PyTorch
+
+Recommended setup:
+
+```bash
+python -m venv venv
+source venv/bin/activate
+pip install torch gym dm_control dmc2gym numpy
+
+
+
+
